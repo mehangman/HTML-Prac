@@ -1,0 +1,100 @@
+<!-- index.html -->
+<html>
+
+<head>
+    <title>Assignment 8 - Background Styling</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 10px;
+        }
+
+        .box {
+            border: 2px solid #555;
+            height: 120px;
+            margin-bottom: 16px;
+            padding: 10px;
+        }
+
+        .label {
+            background-color: rgba(255, 255, 255, 0.82);
+            padding: 4px 8px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2 align="center">Assignment 8: Background Styling Attributes</h2>
+    <hr>
+
+    <!-- 1. background-color -->
+    <div class="box" style="background-color: steelblue;">
+        <span class="label"><b>1. background-color: steelblue</b><br>
+            Sets a solid color as background. No image needed.</span>
+    </div>
+
+    <!-- 2. background-image — default (repeats) -->
+    <div class="box" style="background-image: url('tile.png');">
+        <span class="label"><b>2. background-image (default repeat)</b><br>
+            Small tile image repeats to fill entire area.</span>
+    </div>
+
+    <!-- 3. background-repeat: no-repeat -->
+    <div class="box" style="background-image: url('nature.jpg'); background-repeat: no-repeat; background-color: #ccc;">
+        <span class="label"><b>3. background-repeat: no-repeat</b><br>
+            Image appears only once. Gray fills the rest.</span>
+    </div>
+
+    <!-- 4. background-repeat: repeat-x -->
+    <div class="box" style="background-image: url('tile.png'); background-repeat: repeat-x; background-color: #eee;">
+        <span class="label"><b>4. background-repeat: repeat-x</b><br>
+            Image repeats horizontally only (one row along the top).</span>
+    </div>
+
+    <!-- 5. background-repeat: repeat-y -->
+    <div class="box" style="background-image: url('tile.png'); background-repeat: repeat-y; background-color: #eee;">
+        <span class="label"><b>5. background-repeat: repeat-y</b><br>
+            Image repeats vertically only (one column on the left).</span>
+    </div>
+
+    <!-- 6. background-position -->
+    <div class="box"
+        style="background-image: url('nature.jpg'); background-repeat: no-repeat; background-position: center center; background-color: #aaa;">
+        <span class="label"><b>6. background-position: center center</b><br>
+            Image is placed exactly at the center of the box.</span>
+    </div>
+
+    <!-- 7. background-size: cover -->
+    <div class="box" style="background-image: url('nature.jpg'); background-size: cover;">
+        <span class="label"><b>7. background-size: cover</b><br>
+            Image scales to fully cover the box. No gaps, may crop.</span>
+    </div>
+
+    <!-- 8. background-size: contain -->
+    <div class="box"
+        style="background-image: url('nature.jpg'); background-size: contain; background-repeat: no-repeat; background-color: #bbb;">
+        <span class="label"><b>8. background-size: contain</b><br>
+            Image fits fully inside the box. Gray fills gaps.</span>
+    </div>
+
+    <!-- 9. background-attachment: fixed -->
+    <div class="box" style="background-image: url('nature.jpg'); background-size: cover; background-attachment: fixed;">
+        <span class="label"><b>9. background-attachment: fixed</b><br>
+            Background stays fixed when page is scrolled down.</span>
+    </div>
+
+    <!-- 10. All properties combined -->
+    <div class="box"
+        style="background-image: url('nature.jpg'); background-color: #336; background-repeat: no-repeat; background-position: right bottom; background-size: 40%;">
+        <span class="label"><b>10. All combined</b><br>
+            image at right-bottom, 40% size, no-repeat, color fills rest.</span>
+    </div>
+
+    <hr>
+    <p align="center">Shashank Kumar Verma / 06717702026 / BCA (1B) / 1rst Sem</p>
+
+</body>
+
+</html>
